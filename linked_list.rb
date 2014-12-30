@@ -65,7 +65,9 @@ class LinkedList
 			first = current
 			current = second
 		end
-	return first
+
+		@head, @tail = @tail, @head
+		print
 	end
 
 	# def reverse
@@ -99,8 +101,18 @@ p list.head.value
 
 p list.tail.value
 
+
 # list.head.value
 # list.tail.value
 p list.reverse
 
 p list.head.value.pointer
+
+p "*"*50
+
+
+p list.reverse
+
+p list.head.value
+p list.tail.value
+
